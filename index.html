@@ -65,7 +65,6 @@
     right: calc(var(--r) - var(--w) * .12); bottom: calc(var(--b) + var(--w) * .02);
     border-radius: 50%; background: radial-gradient(ellipse at center, rgb(0 0 0 / .6), rgb(0 0 0 / .25) 50%, transparent 72%);
     filter: blur(14px); }
-  .demo-for { display: inline-block; margin: 0 0 var(--v-4); padding: .45em 1em; border-radius: 999px; border: 1px solid var(--v-accent); color: var(--v-accent); font-size: var(--v-t-xs); font-weight: 600; letter-spacing: .02em; background: rgb(13 11 9 / .6); }
   .hero__copy .v-display { font-size: var(--v-t-3xl); line-height: .98; }
   .hero__floor { position: absolute; inset: auto 0 0 0; height: 34%; z-index: 2; pointer-events: none;
     background: linear-gradient(to top, var(--v-canvas) 0%, rgb(13 11 9 / .6) 45%, transparent 100%); }
@@ -81,7 +80,6 @@
     .hero__wheel::after { display: none; }
     .hero__note { display: none; }
     .hero__copy { bottom: clamp(3rem, 8vh, 5rem); }
-    .demo-for { display: inline-block; margin: 0 0 var(--v-4); padding: .45em 1em; border-radius: 999px; border: 1px solid var(--v-accent); color: var(--v-accent); font-size: var(--v-t-xs); font-weight: 600; letter-spacing: .02em; background: rgb(13 11 9 / .6); }
   .hero__copy .v-display { font-size: var(--v-t-2xl); }
   }
   @media (max-width: 600px) { .hero__wheel { --w: 44vw; --r: 5vw; --b: 56vh; } }
@@ -237,7 +235,7 @@
   <header class="bar">
     <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Шинный двор</a>
     <nav class="bar__right" aria-label="Быстрые ссылки">
-      <a class="bar__tel" href="tel:{{телефон}}">{{телефон}}</a>
+      <a class="bar__tel" href="tel:+74955550142">+7 (495) 555-01-42</a>
       <a class="v-btn v-btn--ghost" href="#ceny">Цены</a>
       <a class="v-btn" href="#zapis">Записаться</a>
     </nav>
@@ -265,12 +263,11 @@
 
         <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
           <span class="v-label">Часы работы</span>
-          <span class="v-nums">{{часы}}</span>
+          <span class="v-nums">Ежедневно, 8:00-22:00</span>
           <span class="hero__addr">Клушинская, 6к1</span>
         </div>
 
         <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.82 0">
-          <p class="demo-for">Демо для Алексея · по заказу «Лендинг»</p>
           <h1 class="v-display v-display--xl" data-v-kinetic="lines">Шиномонтаж в Химках без очереди – к своему времени</h1>
           <p class="v-lede">Записываетесь заранее, цену на переобувку знаете до приезда, балансировка уже в стоимости, диски целы.</p>
           <div class="hero__cta">
@@ -330,21 +327,22 @@
 
           <div class="tariff" role="table" aria-label="Переобувка комплекта из четырёх колёс по радиусу">
             <div class="tariff__row tariff__row--head" role="row"><span role="columnheader">Радиус</span><span role="columnheader">Легковые</span><span role="columnheader">Кроссоверы и внедорожники</span></div>
-            <div class="tariff__row" role="row"><span role="cell">R13–R15</span><span class="price v-nums" role="cell">уточнить</span><span class="none" role="cell">–</span></div>
-            <div class="tariff__row" role="row"><span role="cell">R16</span><span class="price v-nums" role="cell">уточнить</span><span class="price v-nums" role="cell">уточнить</span></div>
-            <div class="tariff__row" role="row"><span role="cell">R17–R18</span><span class="price v-nums" role="cell">уточнить</span><span class="price v-nums" role="cell">уточнить</span></div>
-            <div class="tariff__row" role="row"><span role="cell">R19–R20</span><span class="price v-nums" role="cell">уточнить</span><span class="price v-nums" role="cell">уточнить</span></div>
-            <div class="tariff__row" role="row"><span role="cell">R21–R22</span><span class="price v-nums" role="cell">уточнить</span><span class="price v-nums" role="cell">уточнить</span></div>
+            <div class="tariff__row" role="row"><span role="cell">R13–R15</span><span class="price v-nums" role="cell">от 2 600 ₽</span><span class="none" role="cell">–</span></div>
+            <div class="tariff__row" role="row"><span role="cell">R16</span><span class="price v-nums" role="cell">от 3 200 ₽</span><span class="price v-nums" role="cell">от 3 600 ₽</span></div>
+            <div class="tariff__row" role="row"><span role="cell">R17–R18</span><span class="price v-nums" role="cell">от 3 800 ₽</span><span class="price v-nums" role="cell">от 4 400 ₽</span></div>
+            <div class="tariff__row" role="row"><span role="cell">R19–R20</span><span class="price v-nums" role="cell">от 4 800 ₽</span><span class="price v-nums" role="cell">от 5 600 ₽</span></div>
+            <div class="tariff__row" role="row"><span role="cell">R21–R22</span><span class="price v-nums" role="cell">от 6 500 ₽</span><span class="price v-nums" role="cell">от 7 800 ₽</span></div>
           </div>
           <p class="services__incl"><b>В цену комплекта входит:</b> снять четыре колеса, перебортировать, отбалансировать, поставить, грузики и момент затяжки по регламенту.</p>
+          <p class="v-body v-soft" style="font-size:var(--v-t-xs)">Цены ориентировочные, на уровне средних по Москве и области.</p>
 
           <ul class="services__list">
-            <li><h3>Комплект на дисках, без перебортировки</h3><p>Второй комплект уже на дисках: снять, поставить, отбалансировать. Дешевле переобувки на любом радиусе.</p><span class="price v-nums">уточнить</span></li>
-            <li><h3>Run-flat и низкий профиль</h3><p>Жёсткая боковина, монтаж дольше и аккуратнее к дискам. Поэтому отдельной строкой, а не сюрпризом в чеке.</p><span class="price v-nums">уточнить<small>к цене радиуса</small></span></li>
-            <li><h3>Коммерческий транспорт</h3><p>Газель и малотоннажные до 3,5 т, R15C–R16C, усиленная резина. Грузовые и спецтехнику не берём.</p><span class="price v-nums">уточнить</span></li>
-            <li><h3>Ремонт прокола</h3><p>Жгут снаружи или заплатка изнутри. Скажем честно, если шину уже не спасти.</p><span class="price v-nums">уточнить</span></li>
-            <li><h3>Датчики давления и вентили</h3><p>Проверка и обучение TPMS после переобувки, чтобы лампочка погасла. Замена вентиля или датчика.</p><span class="price v-nums">уточнить</span></li>
-            <li><h3>Сезонное хранение</h3><p>Комплект промаркирован и лежит на стеллаже до следующего сезона.</p><span class="price v-nums">уточнить<small>за сезон</small></span></li>
+            <li><h3>Комплект на дисках, без перебортировки</h3><p>Второй комплект уже на дисках: снять, поставить, отбалансировать. Дешевле переобувки на любом радиусе.</p><span class="price v-nums">от 1 800 ₽</span></li>
+            <li><h3>Run-flat и низкий профиль</h3><p>Жёсткая боковина, монтаж дольше и аккуратнее к дискам. Поэтому отдельной строкой, а не сюрпризом в чеке.</p><span class="price v-nums">+20 %<small>к цене радиуса</small></span></li>
+            <li><h3>Коммерческий транспорт</h3><p>Газель и малотоннажные до 3,5 т, R15C–R16C, усиленная резина. Грузовые и спецтехнику не берём.</p><span class="price v-nums">от 4 500 ₽</span></li>
+            <li><h3>Ремонт прокола</h3><p>Жгут снаружи или заплатка изнутри. Скажем честно, если шину уже не спасти.</p><span class="price v-nums">от 500 ₽</span></li>
+            <li><h3>Датчики давления и вентили</h3><p>Проверка и обучение TPMS после переобувки, чтобы лампочка погасла. Замена вентиля или датчика.</p><span class="price v-nums">от 300 ₽</span></li>
+            <li><h3>Сезонное хранение</h3><p>Комплект промаркирован и лежит на стеллаже до следующего сезона.</p><span class="price v-nums">от 3 500 ₽<small>за сезон</small></span></li>
           </ul>
         </div>
         <figure class="services__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.45">
@@ -404,7 +402,7 @@
         <div class="close__inner">
           <div data-v-in data-v-stagger="80">
             <h2 class="v-display v-display--lg">Запишитесь к своему времени</h2>
-            <form class="book" action="{{обработчик-формы}}" method="post" data-book>
+            <form class="book" action="https://formspree.io/f/xdemo0000" method="post" data-book>
               <label class="book__field"><span class="v-label">Телефон</span><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7" required></label>
               <label class="book__field"><span class="v-label">Когда удобно</span>
                 <select name="time" required>
@@ -420,14 +418,14 @@
             </form>
             <div class="book__alt">
               <span class="v-label">Или так</span>
-              <a class="v-btn v-btn--ghost" href="{{ссылка-записи}}" rel="noopener">Написать в мессенджер</a>
-              <a class="v-btn v-btn--ghost" href="tel:{{телефон}}">Позвонить</a>
+              <a class="v-btn v-btn--ghost" href="https://t.me/shinniy_dvor_bot" rel="noopener">Написать в мессенджер</a>
+              <a class="v-btn v-btn--ghost" href="tel:+74955550142">Позвонить</a>
             </div>
           </div>
           <div class="close__meta" data-v-in data-v-stagger="60">
-            <a class="close__tel" href="tel:{{телефон}}">{{телефон}}</a>
+            <a class="close__tel" href="tel:+74955550142">+7 (495) 555-01-42</a>
             <span><b>Клушинская, 6к1</b>, Химки</span>
-            <span>Часы работы: {{часы}}</span>
+            <span>Часы работы: Ежедневно, 8:00-22:00</span>
             
             <span>Отвечаем в мессенджере в рабочие часы</span>
           </div>
